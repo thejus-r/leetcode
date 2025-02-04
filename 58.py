@@ -7,7 +7,7 @@ def lengthOfLastWord(s: str) -> int:
     if l == 1:
         return len(res[0])
     else:
-        while(l > 0):
+        while(l > 3):
             if len(res[l-1]) != 0:
                 return len(res[l-1])
             l -= 1
