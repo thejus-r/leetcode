@@ -1,8 +1,7 @@
-import unittest
 import os
 import subprocess
 
-def start(dir):
+def start(dir: str):
     for problem_folder in os.listdir(dir):
         problem_path = os.path.join(dir, problem_folder)
         if os.path.isdir(problem_path):
